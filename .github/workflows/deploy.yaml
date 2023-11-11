@@ -7,6 +7,6 @@ jobs:
       - name: Deploy Server Step
         uses: strawstack/ssh-node-server-setup@main
         with:
-          server-host: lin4.rch.app
+          server-host: ${{ secrets.SERVER_HOST }}
           user-email: ${{ secrets.USER_EMAIL }}
           ssh-key: ${{ secrets.SSH_KEY }}
