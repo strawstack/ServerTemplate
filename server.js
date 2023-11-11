@@ -33,7 +33,7 @@ app.get('/test', (req, res) => {
 // SOCKET
 /*
 app.get('/socket', (req, res) => {
-  res.sendFile(path.join(__dirname, '/socket/index.html'));
+  res.sendFile(path.join(__dirname, '/socketio/index.html'));
 });
 
 io.on('connection', (socket) => {
