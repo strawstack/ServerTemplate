@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="/socket.io/socket.io.js"></script>
+    <style></style>
+  </head>
+  <body>
+    
+    <div>socket.io</div>
+
+    <script>
+      const socket = io();
+
+      function send(msg) {
+        socket.emit('message', msg);
+      }
+
+      send("test message from client.");
+
+      socket.on('message', (msg) => {
+        console.log(msg);
+      });      
+    </script>
+  </body>
+</html>
