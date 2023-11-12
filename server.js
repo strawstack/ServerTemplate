@@ -17,10 +17,12 @@ const app = express();
 const server = createServer(app);
 
 // FIREBASE
-//const io = new Server(server);
 //const firebaseConfig = CONFIG_HERE;
 //const firebase_app = initializeApp(firebaseConfig);
 //const db = getFirestore(firebase_app);
+
+// SOCKET
+//const io = new Server(server);
 
 app.get('/', (req, res) => {
     res.send("root");
